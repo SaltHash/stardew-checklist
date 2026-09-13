@@ -195,7 +195,7 @@ const appData = {
           { name: "Thorns Ring", desc: "When enemies damage you, they will take damage themselves.", ingredients: "Bone Fragment (50), Stone (50), Gold Bar (1)", source: "Combat Level 7" },
           { name: "Glowstone Ring", desc: "Emits a constant light, and also increases your radius for collecting items.", ingredients: "Solar Essence (5), Iron Bar (5)", source: "Mining Level 4" },
           { name: "Iridium Band", desc: "Glows, attracts items, and increases attack damage by 10%.", ingredients: "Iridium Bar (5), Solar Essence (50), Void Essence (50)", source: "Combat Level 9" },
-          { name: "Wedding Ring", desc: "An old Zuzu City tradition... It's used to ask for another farmer's hand in marriage.", ingredients: "Iridium Bar (5), Prismatic Shard (1)", source: "Traveling Cart" }
+          { name: "Wedding Ring (not necessary for achievement/perfection)", desc: "An old Zuzu City tradition... It's used to ask for another farmer's hand in marriage.", ingredients: "Iridium Bar (5), Prismatic Shard (1)", source: "Traveling Cart" }
       ]},
       { category: "Edible Items", items: [
           { name: "Field Snack", desc: "A quick snack to fuel the hungry forager.", ingredients: "Acorn (1), Maple Seed (1), Pine Cone (1)", source: "Foraging Level 1" },
@@ -347,26 +347,6 @@ const appData = {
       ]
     },
     {
-      category: "Legendary Fish",
-      items: [
-        { name: "Crimsonfish", desc: "Lives deep in the ocean but likes to lay its eggs in the warm summer water.", ingredients: "East Pier on The Beach", source: "Summer" },
-        { name: "Angler", desc: "Uses a bioluminescent dangler to attract prey.", ingredients: "Near the waterfall north of JojaMart", source: "Fall" },
-        { name: "Legend", desc: "The king of all fish! They said he'd never be caught.", ingredients: "The Mountain Lake near the log", source: "Spring" },
-        { name: "Glacierfish", desc: "Builds a nest on the underside of glaciers.", ingredients: "South end of Arrowhead Island in Cindersap Forest", source: "Winter" },
-        { name: "Mutant Carp", desc: "The strange waters of the sewer turned this carp into a monstrosity.", ingredients: "The Sewers", source: "All Seasons" }
-      ]
-    },
-    {
-      category: "Legendary Fish II",
-      items: [
-        { name: "Son of Crimsonfish", desc: "He hatched in the warm summer water, and followed in the footsteps of his father.", ingredients: "East Pier on The Beach", source: "All Seasons" },
-        { name: "Ms. Angler", desc: "Uses a bioluminescent dangler to attract prey.", ingredients: "Near the waterfall north of JojaMart", source: "All Seasons" },
-        { name: "Legend II", desc: "The successor to the original Legend.", ingredients: "The Mountain Lake near the log", source: "All Seasons" },
-        { name: "Glacierfish Jr.", desc: "The original Glacierfish had a son...", ingredients: "South end of Arrowhead Island in Cindersap Forest", source: "All Seasons" },
-        { name: "Radioactive Carp", desc: "A carp that spent one too many years in toxic sludge.", ingredients: "The Sewers", source: "All Seasons" }
-      ]
-    },
-    {
       category: "Crab Pot Fish",
       items: [
         { name: "Clam", desc: "There's a chewy little guy in there...", ingredients: "Ocean Crab Pot / Foraging", source: "Beach" },
@@ -391,7 +371,27 @@ const appData = {
         { name: "River Jelly", desc: "A rare jelly found in freshwater.", ingredients: "Freshwater locations", source: "All Seasons" },
         { name: "Cave Jelly", desc: "A rare jelly found in underground lakes.", ingredients: "Mines (Levels 20, 60, 100)", source: "All Seasons" }
       ]
-    }
+    },
+    {
+      category: "Legendary Fish",
+      items: [
+        { name: "Crimsonfish", desc: "Lives deep in the ocean but likes to lay its eggs in the warm summer water.", ingredients: "East Pier on The Beach", source: "Summer" },
+        { name: "Angler", desc: "Uses a bioluminescent dangler to attract prey.", ingredients: "Near the waterfall north of JojaMart", source: "Fall" },
+        { name: "Legend", desc: "The king of all fish! They said he'd never be caught.", ingredients: "The Mountain Lake near the log", source: "Spring" },
+        { name: "Glacierfish", desc: "Builds a nest on the underside of glaciers.", ingredients: "South end of Arrowhead Island in Cindersap Forest", source: "Winter" },
+        { name: "Mutant Carp", desc: "The strange waters of the sewer turned this carp into a monstrosity.", ingredients: "The Sewers", source: "All Seasons" }
+      ]
+    },
+    {
+      category: "Legendary Fish II (not necessary for achievement/perfection)",
+      items: [
+        { name: "Son of Crimsonfish", desc: "He hatched in the warm summer water, and followed in the footsteps of his father.", ingredients: "East Pier on The Beach", source: "All Seasons" },
+        { name: "Ms. Angler", desc: "Uses a bioluminescent dangler to attract prey.", ingredients: "Near the waterfall north of JojaMart", source: "All Seasons" },
+        { name: "Legend II", desc: "The successor to the original Legend.", ingredients: "The Mountain Lake near the log", source: "All Seasons" },
+        { name: "Glacierfish Jr.", desc: "The original Glacierfish had a son...", ingredients: "South end of Arrowhead Island in Cindersap Forest", source: "All Seasons" },
+        { name: "Radioactive Carp", desc: "A carp that spent one too many years in toxic sludge.", ingredients: "The Sewers", source: "All Seasons" }
+      ]
+    },
   ]
 };
 
