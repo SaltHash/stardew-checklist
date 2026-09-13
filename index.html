@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stardew Checklist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="assets/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="brand">
+            <span class="icon" id="brandIcon"></span>
+            <div>
+                <h1>Stardew Checklist</h1>
+                <p class="brand-sub">Cooking &middot; Crafting &middot; Fishing</p>
+            </div>
+        </div>
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+            <span class="icon" id="themeIcon"></span>
+        </button>
+    </header>
+
+    <!-- HOME SCREEN -->
+    <div id="home-view" class="view active">
+        <p class="intro">Select a category to browse recipes and track what you've collected on the farm.</p>
+        <div class="home-grid" id="home-grid"></div>
+    </div>
+
+    <!-- CHECKLIST SCREENS -->
+    <div id="checklist-view" class="view">
+        <div class="nav-bar">
+            <button class="back-btn" onclick="switchView('home')">
+                <span class="icon" id="backIcon"></span> Back
+            </button>
+            <div class="checklist-heading-wrap">
+                <h2 id="checklist-heading"></h2>
+                <p class="checklist-subheading" id="checklist-subheading"></p>
+            </div>
+            <div class="nav-spacer"></div>
+        </div>
+
+        <div id="checklist-container"></div>
+    </div>
+</div>
+
+<!-- Details Modal -->
+<div id="detailsModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()"><span class="icon" id="closeIcon"></span></span>
+        <h2 id="modalTitle"></h2>
+        <div id="modalBody"></div>
+        <button id="modalCompleteBtn" class="modal-complete-btn" onclick="toggleCompleteFromModal()"></button>
+    </div>
+</div>
+
+<script src="assets/script.js"></script>
+
+</body>
+</html>
