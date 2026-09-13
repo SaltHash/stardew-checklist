@@ -127,10 +127,15 @@ const appData = {
       ]},
       { category: "Artisan Equipment", items: [
           { name: "Mayonnaise Machine", desc: "Turns eggs into mayonnaise.", ingredients: "Wood (15), Stone (15), Earth Crystal (1), Copper Bar (1)", source: "Farming Level 2" },
-          { name: "Bee House", desc: "Place outside and wait for delicious honey!", ingredients: "Wood (40), Coal (8), Iron Bar (1), Maple Syrup (1)", source: "Farming Level 3" },
+          { name: "Bee House", desc: "Place outside and wait for delicious honey! (Except in Winter).", ingredients: "Wood (40), Coal (8), Iron Bar (1), Maple Syrup (1)", source: "Farming Level 3" },
           { name: "Preserves Jar", desc: "Turns vegetables into pickles and fruit into jam.", ingredients: "Wood (50), Stone (40), Coal (8)", source: "Farming Level 4" },
           { name: "Cheese Press", desc: "Turns milk into cheese.", ingredients: "Wood (45), Stone (45), Hardwood (10), Copper Bar (1)", source: "Farming Level 6" },
-          { name: "Keg", desc: "Turns fruits and vegetables into beverages.", ingredients: "Wood (30), Copper Bar (1), Iron Bar (1), Oak Resin (1)", source: "Farming Level 8" }
+          { name: "Loom", desc: "Turns raw wool into fine cloth.", ingredients: "Wood (60), Fiber (30), Pine Tar (1)", source: "Farming Level 7" },
+          { name: "Keg", desc: "Place a fruit or vegetable in here. Eventually it will turn into a beverage.", ingredients: "Wood (30), Copper Bar (1), Iron Bar (1), Oak Resin (1)", source: "Farming Level 8" },
+          { name: "Oil Maker", desc: "Makes gourmet truffle oil.", ingredients: "Slime (50), Hardwood (20), Gold Bar (1)", source: "Farming Level 8" },
+          { name: "Cask", desc: "Use in the cellar to age products like wine and cheese.", ingredients: "Wood (20), Hardwood (1)", source: "Farmhouse cellar upgrade" },
+          { name: "Fish Smoker", desc: "Place fish inside with a piece of coal to create smoked fish, which is worth double. The quality of the fish is preserved.", ingredients: "Hardwood (10), Sea Jelly (1), River Jelly (1), Cave Jelly (1)", source: "Fish Shop for 10,000g" },
+          { name: "Dehydrator", desc: "Place 5 pieces of fruit or edible mushrooms inside to dry them.", ingredients: "Wood (30), Clay (2), Fire Quartz (1)", source: "Pierre's for 10,000g" }
       ]},
       { category: "Fertilizer", items: [
           { name: "Basic Fertilizer", desc: "Improves soil quality a little, increasing your chance to grow quality crops. Mix into tilled soil.", ingredients: "Sap (2)", source: "Farming Level 1" },
