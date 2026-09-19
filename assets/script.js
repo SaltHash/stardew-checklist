@@ -478,12 +478,24 @@ function fillStaticIcons() {
 
 // ---------- Helpers ----------
 function categoryTotal(cat) {
-    return appData[cat].reduce((sum, g) => sum + g.items.length, 0);
+  const total = appData[cat].reduce((sum, g) => sum + g.items.length, 0);
+  if (cat === 'crafting') return total - 1;
+  if (cat === 'fishing') return total - 5;
+  return total;
 }
 function categoryCompletedCount(cat) {
-    let n = 0;
-    completedItems.forEach(k => { if (k.startsWith(cat + '::')) n++; });
-    return n;
+  let n = 0;
+  const excluded = new Set([
+    'crafting::Wedding Ring (not necessary for achievement/perfection)',
+    'fishing::Son of Crimsonfish', 'fishing::Ms. Angler', 'fishing::Legend II',
+    'fishing::Glacierfish Jr.', 'fishing::Radioactive Carp'
+  ]);
+  completedItems.forEach(k => {
+    if (k.startsWith(cat + '::')) {
+      if (k.startsWith(cat + '::') && !excluded.has(k)) n++;
+    }
+  });
+  return n;
 }
 
 // ---------- Home view ----------
